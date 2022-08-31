@@ -1,5 +1,5 @@
-# SimpleWebServer
-基于Cpp11实现的高性能Web服务器，代码简洁，注释详尽，适合新手入门
+# LW-WebServer
+基于Cpp11实现的高性能轻量级(LightWeight)Web服务器项目
 ## 特性
 - 利用Epoll与线程池实现Reactor高并发模型
 - 利用状态机与正则实现HTTP请求报文解析，可同时处理GET与POST请求
@@ -13,7 +13,7 @@
 ## 环境要求
 - Linux
 - C++11
-- MySQL 5.7.31
+- MySQL
 - jsoncpp 
 ## 目录树
 ```
@@ -42,18 +42,7 @@
 ## 项目启动
 将项目克隆到本地
 ```
-git clone -b upload https://github.com/Sakura1221/SimpleWebServer.git
-// 还要添加jsoncpp子模块，在项目根目录下执行
-git submodule update --init --recursive
-```
-编译安装jsoncpp库
-```
-cd jsoncpp
-cmake CMakeLists.txt
-// 会生成一个Makefile文件，make编译
-make
-// 执行安装（将生成的库拷贝到系统目录下）
-sudo make install
+git clone -b upload https://github.com/KevinStrive88/LW-WebServer.git
 ```
 
 配置数据库
